@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum – Salon Schuppe</title>
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white:    #FFFFFF;
+            --gray-50:  #F4F4F2;
+            --gray-100: #EBEBEB;
+            --gray-200: #D8D8D8;
+            --gray-400: #AAAAAA;
+            --gray-500: #777777;
+            --black:    #111111;
+            --text:     #1C1C1C;
+            --text-mid: #555555;
+            --font-display: 'Cormorant SC', serif;
+            --font-body:    'Jost', sans-serif;
+            --max-w: 1080px;
+            --t: 0.28s ease;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { background: var(--white); color: var(--text); font-family: var(--font-body); font-weight: 300; line-height: 1.75; }
+        a { color: inherit; text-decoration: none; }
+
+        /* NAV */
+        #nav {
+            position: sticky; top: 0; z-index: 900;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid var(--gray-100);
+            box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+        }
+        .nav-inner {
+            max-width: var(--max-w); margin: 0 auto; padding: 0 2rem;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 62px;
+        }
+        .nav-brand { font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 0.07em; color: var(--black); }
+        .nav-back {
+            font-size: 0.68rem; font-weight: 400; letter-spacing: 0.18em;
+            text-transform: uppercase; color: var(--gray-500);
+            display: flex; align-items: center; gap: 0.4rem;
+            transition: color var(--t);
+        }
+        .nav-back:hover { color: var(--black); }
+        @media (max-width: 680px) {
+            .nav-inner { flex-direction: column; height: auto; padding: 0.75rem 1.25rem; gap: 0.4rem; align-items: flex-start; }
+        }
+
+        /* CONTENT */
+        .impressum-page {
+            max-width: 720px; margin: 0 auto;
+            padding: 5rem 2rem 6rem;
+        }
+        .page-eyebrow {
+            display: block; font-size: 0.65rem; font-weight: 400;
+            letter-spacing: 0.28em; text-transform: uppercase;
+            color: var(--gray-500); margin-bottom: 0.55rem;
+        }
+        h1 {
+            font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 500; letter-spacing: 0.04em; color: var(--black);
+            margin-bottom: 0.5rem;
+        }
+        .page-divider {
+            width: 48px; height: 1px; background: var(--gray-200);
+            margin: 1.5rem 0 2.5rem;
+        }
+
+        .impressum-section { margin-bottom: 2.5rem; }
+        .impressum-section h2 {
+            font-family: var(--font-display); font-size: 1.1rem;
+            font-weight: 500; letter-spacing: 0.06em;
+            color: var(--black); margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem; border-bottom: 1px solid var(--gray-100);
+        }
+        .impressum-section p,
+        .impressum-section address {
+            font-style: normal; font-size: 0.93rem; font-weight: 300;
+            color: var(--text-mid); line-height: 1.9;
+            margin-bottom: 0.5rem;
+        }
+        .impressum-section a { color: var(--black); border-bottom: 1px solid var(--gray-200); transition: border-color var(--t); }
+        .impressum-section a:hover { border-color: var(--black); }
+
+        .todo {
+            background: #FFF8E1;
+            border-left: 3px solid #F59E0B;
+            padding: 0.6rem 1rem;
+            font-size: 0.82rem;
+            color: #92400E;
+            margin-bottom: 0.75rem;
+            border-radius: 0 4px 4px 0;
+        }
+        .todo strong { font-weight: 500; }
+
+        /* FOOTER */
+        footer { background: var(--black); padding: 2rem; }
+        .footer-inner { max-width: var(--max-w); margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center; }
+        .footer-brand { font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.07em; color: rgba(255,255,255,0.65); }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1.75rem; }
+        .footer-links a { font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.38); transition: color var(--t); }
+        .footer-links a:hover { color: rgba(255,255,255,0.85); }
+        .footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.18); }
+    </style>
+</head>
+<body>
+
+<nav id="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">Salon Schuppe</a>
+        <a href="index.html" class="nav-back">← Zurück zur Startseite</a>
+    </div>
+</nav>
+
+<main class="impressum-page">
+    <span class="page-eyebrow">Rechtliches</span>
+    <h1>Impressum</h1>
+    <div class="page-divider"></div>
+
+    <!-- ANGABEN GEMÄß § 5 TMG -->
+    <div class="impressum-section">
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <div class="todo">
+            <strong>⚠ Bitte ausfüllen:</strong> Vollständigen Namen des Inhabers eintragen.
+        </div>
+        <address>
+            [Vor- und Nachname des Inhabers]<br>
+            Salon Schuppe<br>
+            Südertoft 3<br>
+            24392 Süderbrarup
+        </address>
+    </div>
+
+    <!-- KONTAKT -->
+    <div class="impressum-section">
+        <h2>Kontakt</h2>
+        <p>
+            Telefon: <a href="tel:046419862870">04641 / 98 62 870</a><br>
+            <!-- E-Mail eintragen, falls vorhanden: -->
+            <!-- E-Mail: <a href="mailto:info@salon-schuppe.de">info@salon-schuppe.de</a> -->
+        </p>
+    </div>
+
+    <!-- BERUFSRECHTLICHE ANGABEN -->
+    <div class="impressum-section">
+        <h2>Berufsrechtliche Angaben</h2>
+        <div class="todo">
+            <strong>⚠ Bitte ergänzen:</strong> Zuständige Handwerkskammer eintragen.
+        </div>
+        <p>
+            Berufsbezeichnung: Friseur/Friseurin (verliehen in der Bundesrepublik Deutschland)<br>
+            Zuständige Kammer: Handwerkskammer [Name eintragen]<br>
+            <!-- Ggf. Steuernummer oder USt-IdNr. eintragen: -->
+            <!-- Steuernummer: XX/XXX/XXXXX -->
+        </p>
+    </div>
+
+    <!-- VERANTWORTLICH NACH § 18 ABS. 2 MSTV -->
+    <div class="impressum-section">
+        <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+        <address>
+            [Inhabername]<br>
+            Südertoft 3, 24392 Süderbrarup
+        </address>
+    </div>
+
+    <!-- HAFTUNGSAUSSCHLUSS -->
+    <div class="impressum-section">
+        <h2>Haftungsausschluss</h2>
+        <p>
+            <strong style="font-weight:500;">Haftung für Inhalte:</strong>
+            Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte
+            auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
+            §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet,
+            übermittelte oder gespeicherte fremde Informationen zu überwachen.
+        </p>
+        <p>
+            <strong style="font-weight:500;">Haftung für Links:</strong>
+            Unser Angebot enthält Links zu externen Websites Dritter, auf deren
+            Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
+            fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+            verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber
+            verantwortlich.
+        </p>
+    </div>
+
+    <!-- URHEBERRECHT -->
+    <div class="impressum-section">
+        <h2>Urheberrecht</h2>
+        <p>
+            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
+            Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
+            Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+            Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
+            jeweiligen Autors bzw. Erstellers.
+        </p>
+    </div>
+
+    <!-- DATENSCHUTZ (HINWEIS) -->
+    <div class="impressum-section">
+        <h2>Datenschutz</h2>
+        <div class="todo">
+            <strong>⚠ Hinweis:</strong> Für eine vollständige Website benötigen Sie
+            zusätzlich eine separate Datenschutzerklärung (z.&nbsp;B. über
+            <a href="https://www.datenschutz-generator.de" target="_blank" rel="noopener">datenschutz-generator.de</a>).
+        </div>
+        <p>
+            Die Nutzung unserer Website ist in der Regel ohne Angabe personenbezogener
+            Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben
+            werden, erfolgt dies auf freiwilliger Basis.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">Salon Schuppe</div>
+        <nav class="footer-links">
+            <a href="index.html">Startseite</a>
+            <a href="index.html#ueber-uns">Über uns</a>
+            <a href="index.html#preise">Preise</a>
+            <a href="index.html#oeffnungszeiten">Öffnungszeiten</a>
+            <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+        <p class="footer-copy">&copy; 2025 Salon Schuppe &middot; Südertoft 3 &middot; 24392 Süderbrarup</p>
+    </div>
+</footer>
+
+</body>
+</html>
